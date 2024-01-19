@@ -16,8 +16,7 @@ export const Footer = () => {
                 <div class="grid grid-cols-1 gap-8 sm:grid-cols-2">
                     <div>
                         <p>
-
-                            <a href="#" class="block text-2xl font-medium text-gray-900 hover:opacity-75 sm:text-3xl">
+                            <a href="/#" class="block text-2xl font-medium text-gray-900 hover:opacity-75 sm:text-3xl">
                                 Social Connection
                             </a>
                         </p>
@@ -126,7 +125,7 @@ export const Footer = () => {
                     <div>
                         <p>
 
-                            <a href="#" class="block text-2xl font-medium text-gray-900 hover:opacity-75 sm:text-3xl">
+                            <a href="/#" class="block text-2xl font-medium text-gray-900 hover:opacity-75 sm:text-3xl">
                                 Verve Management
                             </a>
                         </p>
