@@ -4,9 +4,11 @@ import Contentgrid from './contentGrid';
 import characters from '../images/characters.png'
 import humansImg from '../images/Humaaans - 3 Characters.png'
 import { Footer } from './footer';
+import { useInView } from "react-intersection-observer"
 export const HomePage = () => {
+    
     const imageUrl = 'https://images.pexels.com/photos/325193/pexels-photo-325193.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'; // Replace with your actual image URL
-
+    const [ref, inView] = useInView({ threshold: 0.5 })
     const highlightsData = [
         {
             mainColor: 'bg-red-100',
@@ -136,12 +138,12 @@ export const HomePage = () => {
     return (
         <>
             <div className="bg-cover bg-center h-[600px] w-full" style={{ backgroundImage: `url(${imageUrl})` }}>
-                <div className="bg-black bg-opacity-65 h-full flex flex-col md:items-center items-start p-3 justify-center text-white">
-                    <div className=''>
+                <div ref={ref} className="bg-black bg-opacity-65 h-full flex flex-col md:items-center items-start p-3 justify-center text-white">
+                    <div className={` ${inView ? ' animate__animated animate__fadeIn' : ''}`} >
                         <div>4TH ANNUAL</div>
                         <h1 className="md:text-6xl text-4xl font-semibold">FUTURE BANKS <br />SUMMIT & AWARDS</h1>
                     </div>
-                    <div className='py-2'>
+                    <div className='py-2  animate__animated animate__fadeIn animate__delay-1s'>
                         <div className='text-xl flex w-full'>
                             <div className='p-2 md:mx-2 bg-amber-800 text-white rounded-sm'>
                                 September 11th -12th 2023
@@ -160,7 +162,7 @@ export const HomePage = () => {
                     Digital Innovations Transforming the Kingdom's Banking Landscape
                 </div>
             </section>
-            <Contentgrid classCss="bg-gray-100 mt-10  mx-2 px-4"  id="event">
+            <Contentgrid classCss="bg-gray-100 mt-10  mx-2 px-4 animate__fadeIn animate__delay-1s" id="event" >
                 <div className='col-span-1 text-center w-full flex flex-col md:px-3 '>
                     <div className='w-full h-full md:-top-16 -left-8 justify-center md:absolute'>
                         <img
@@ -236,9 +238,9 @@ export const HomePage = () => {
 
             <Contentgrid classCss="mt-10  mx-2 px-4" id="why_attend">
 
-                <div className='md:col-span-3'>
+                <div className='md:col-span-3 '>
                     <h1 className='gradient-text text-4xl'>Why Attend?</h1>
-                    <p className='py-2'>
+                    <p className='py-2 '>
                         The 4th Annual Future Banks Summit KSA 2023 will highlight the enabling role of digitalization in reshaping the future of banking. The pandemic has forced digital acceleration at such a massive scale that banks are not just looking to transform but are forced to reimagine their business. Delegates will experience a power-packed agenda consisting of presentations, panel discussions, and keynotes from globally and regionally renowned speakers, panelists, and moderators.                    </p>
                     <p className='py-2'>
                         If you are ready to innovate and join the ranks of the brightest minds in the industry while resonating with the following compelling reasons to attend, then register today:

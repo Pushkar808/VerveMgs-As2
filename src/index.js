@@ -7,10 +7,10 @@ import { HomePage } from './components/homePage';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <React.StrictMode>
+  <>
     <NavBar />
-    
-      <HomePage />
 
-  </React.StrictMode>
+    <HomePage />
+  </>
+
 );

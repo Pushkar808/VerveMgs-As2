@@ -1,11 +1,11 @@
 import React from 'react';
 import Logo from '../images/Logo.png'
 
-const NavBar = () => {
+const NavBar = (props) => {
     const imageUrl = 'https://via.placeholder.com/1920x400'; // Replace with your actual image URL
 
     return (
-        <nav className="bg-transparent absolute top-0 left-0 right-0 p-4">
+        <nav className={`bg-transparent absolute top-0 left-0 right-0 p-4`}>
             <div className="container mx-auto flex justify-between items-center text-white">
                 <a href="/" className="flex items-center space-x-3">
                     <img src={Logo} className="h-10 w-44 md:h-12 md:w-56" alt="Flowbite Logo" />
