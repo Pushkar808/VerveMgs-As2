@@ -1,16 +1,16 @@
 {
   "files": {
     "main.css": "/VerveMgs-As2/static/css/main.5545cc96.css",
-    "main.js": "/VerveMgs-As2/static/js/main.b43f7230.js",
+    "main.js": "/VerveMgs-As2/static/js/main.7d0e6352.js",
     "static/media/Humaaans - 3 Characters.png": "/VerveMgs-As2/static/media/Humaaans - 3 Characters.9789e57005d281feb447.png",
     "static/media/characters.png": "/VerveMgs-As2/static/media/characters.f29c0bed7e445c593b3f.png",
     "static/media/Logo.png": "/VerveMgs-As2/static/media/Logo.9edbece6a51c90185605.png",
     "index.html": "/VerveMgs-As2/index.html",
     "main.5545cc96.css.map": "/VerveMgs-As2/static/css/main.5545cc96.css.map",
-    "main.b43f7230.js.map": "/VerveMgs-As2/static/js/main.b43f7230.js.map"
+    "main.7d0e6352.js.map": "/VerveMgs-As2/static/js/main.7d0e6352.js.map"
   },
   "entrypoints": [
     "static/css/main.5545cc96.css",
-    "static/js/main.b43f7230.js"
+    "static/js/main.7d0e6352.js"
   ]
 }
