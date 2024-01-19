@@ -19,19 +19,19 @@ const NavBar = () => {
                 <div className="hidden w-full md:block md:w-auto" id="navbar-default">
                     <ul className="font-medium flex flex-col p-4 md:p-0 mt-4 border  rounded-lg  md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0  ">
                         <li>
-                            <a href="#section1" className="block py-2 px-3  rounded  md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 " aria-current="page">Event Overview</a>
+                            <a href="/" className="block py-2 px-3  rounded  md:hover:bg-transparent md:border-0 md:hover:text-gray-400 md:p-0 ">Home</a>
                         </li>
                         <li>
-                            <a href="#section2" className="block py-2 px-3  rounded  md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 ">Industries Covered</a>
+                            <a href="#event" className="block py-2 px-3  rounded  md:hover:bg-transparent md:border-0 md:hover:text-gray-400 md:p-0 " aria-current="page">Event Overview</a>
                         </li>
                         <li>
-                            <a href="#section3" className="block py-2 px-3  rounded  md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 ">Who You will Met</a>
+                            <a href="#meeting" className="block py-2 px-3  rounded  md:hover:bg-transparent md:border-0 md:hover:text-gray-400 md:p-0 ">Who You will Met</a>
                         </li>
                         <li>
-                            <a href="#section4" className="block py-2 px-3  rounded  md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 ">Why Attend</a>
+                            <a href="#why_attend" className="block py-2 px-3  rounded  md:hover:bg-transparent md:border-0 md:hover:text-gray-400 md:p-0 ">Why Attend</a>
                         </li>
                         <li>
-                            <a href="#section5" className="block py-2 px-3  bg-blue-700 rounded md:bg-transparent md:p-0 md:hover:text-blue-700  " >Topic Highligts​​</a>
+                            <a href="#highligts​​" className="block py-2 px-3  bg-blue-700 rounded md:bg-transparent md:p-0 md:hover:text-gray-400  " >Topic Highligts​​</a>
                         </li>
                     </ul>
                 </div>

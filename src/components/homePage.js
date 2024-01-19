@@ -3,6 +3,7 @@ import { Number } from './number';
 import Contentgrid from './contentGrid';
 import characters from '../images/characters.png'
 import humansImg from '../images/Humaaans - 3 Characters.png'
+import { Footer } from './footer';
 export const HomePage = () => {
     const imageUrl = 'https://images.pexels.com/photos/325193/pexels-photo-325193.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'; // Replace with your actual image URL
 
@@ -135,8 +136,22 @@ export const HomePage = () => {
     return (
         <>
             <div className="bg-cover bg-center h-[600px] w-full" style={{ backgroundImage: `url(${imageUrl})` }}>
-                <div className="bg-black bg-opacity-65 h-full flex items-center justify-center text-white">
-                    <h1 className="text-4xl font-semibold">Welcome to Your Summit</h1>
+                <div className="bg-black bg-opacity-65 h-full flex flex-col md:items-center items-start p-3 justify-center text-white">
+                    <div className=''>
+                        <div>4TH ANNUAL</div>
+                        <h1 className="md:text-6xl text-4xl font-semibold">FUTURE BANKS <br />SUMMIT & AWARDS</h1>
+                    </div>
+                    <div className='py-2'>
+                        <div className='text-xl flex w-full'>
+                            <div className='p-2 md:mx-2 bg-amber-800 text-white rounded-sm'>
+                                September 11th -12th 2023
+                            </div>
+                            <div className='p-2 mx-2 bg-amber-800 text-white rounded-sm'>
+                                Riyadh Marriott Hotel
+                            </div>
+                        </div>
+
+                    </div>
                 </div>
             </div>
             <section className='py-3 px-2'>
@@ -145,9 +160,9 @@ export const HomePage = () => {
                     Digital Innovations Transforming the Kingdom's Banking Landscape
                 </div>
             </section>
-            <Contentgrid classCss="bg-gray-100">
-                <div className='col-span-1 text-center w-full flex flex-col'>
-                    <div className='w-full h-full -top-16 justify-center absolute'>
+            <Contentgrid classCss="bg-gray-100 mt-10  mx-2 px-4"  id="event">
+                <div className='col-span-1 text-center w-full flex flex-col md:px-3 '>
+                    <div className='w-full h-full md:-top-16 -left-8 justify-center md:absolute'>
                         <img
                             src="https://ksa.futurebanksummit.com/wp-content/uploads/2022/04/3rd-edition-future-banks-summit-2022-event-overview.png"
                             width={300}
@@ -156,47 +171,53 @@ export const HomePage = () => {
                         />
                     </div>
                 </div>
-                <div className='col-span-3 w-full pl-2'>
-                    <div className='my-4'>
+                <div className='md:col-span-3 col-span-1 w-full '>
+                    <div className='my-5 md:mx-1 mb-10 col-span-1 md:text-left text-center'>
                         <h1 className='gradient-text text-4xl'>Event Overview</h1>
                     </div>
-                    <p className='py-2'>
+
+                    <p className='p-2'>
                         The banking industry worldwide is undergoing phenomenal change, giving the banks an opportunity to relook into their existing business models and take a huge leap towards the future. The shift in consumers' digital experience, adoption of next-gen technologies, transformation of customer service to customer engagement, mobile workforce with a need to 'right-size' the branch network are all opportunities for regional banks to seize and accelerate the shift to digital.
                     </p>
-                    <p className='py-2'>The 4th Annual Future Banks Summit KSA 2023 will showcase the latest innovations and practical case studies, along with interactive panel discussions designed to guide the banking sector in KSA in identifying the right strategies to overcome long-standing resistance and be future-ready!
-                    </p><p className='py-2'> An exciting and timely conference is on its way, discussing the future of the financial industry in KSA driven by innovation and digital advancements, with the adoption of technologies such as AI, digital transformation, digital banking, banking in the metaverse, intelligent automation, regtech, data analytics, cloud migration, cyber security, digital payments models, along with tech-driven redefined business continuity planning strategies.
+                    <p className='p-2'>The 4th Annual Future Banks Summit KSA 2023 will showcase the latest innovations and practical case studies, along with interactive panel discussions designed to guide the banking sector in KSA in identifying the right strategies to overcome long-standing resistance and be future-ready!
+                    </p><p className='p-2'> An exciting and timely conference is on its way, discussing the future of the financial industry in KSA driven by innovation and digital advancements, with the adoption of technologies such as AI, digital transformation, digital banking, banking in the metaverse, intelligent automation, regtech, data analytics, cloud migration, cyber security, digital payments models, along with tech-driven redefined business continuity planning strategies.
                     </p>
+
                 </div>
             </Contentgrid>
 
-            <Contentgrid classCss="mt-10">
-                <div className='my-4  mx-4  col-span-2'>
+            <Contentgrid classCss="mt-10" id="highligts​​">
+                <div className='my-5 md:mx-10 mb-10 col-span-1'>
                     <h1 className='gradient-text text-6xl leading-normal'>Top Highligts​​</h1>
                 </div>
                 {
                     highlightsData.map((element) => {
-                        return (<div className='container flex col-span-1 my-5  hover:drop-shadow-md cursor-pointer w-full h-full justify-center'>
-                            <div className={`relative ${element.mainColor} w-64 h-72 rounded-md px-10 py-20 flex text-center items-center`}>
-                                <div className='absolute -top-8 left-[30%] w-20 h-20 drop-shadow-lg '>
-                                    <img src={element.imgSrc} className={`rounded-full w-full h-full ${element.imgColor} z-2 object-cover`} />
+                        return (
+                            <div className='container flex col-span-1 my-5  hover:drop-shadow-md cursor-pointer w-full h-full justify-center'>
+                                <div className={`relative ${element.mainColor} w-64 h-72 rounded-md px-10 py-20 flex text-center items-center`}>
+                                    <div className='absolute -top-8 left-[34%] w-20 h-20 drop-shadow-lg '>
+                                        <img src={element.imgSrc} className={`rounded-full w-full h-full ${element.imgColor} z-2 object-cover`} />
+                                    </div>
+                                    <p className='text-sm font-bold text-gray-500 drop-shadow-xl'>
+                                        {element.text}
+                                    </p>
                                 </div>
-                                <p className='text-sm font-bold text-gray-500 drop-shadow-xl'>
-                                    {element.text}
-                                </p>
                             </div>
-                        </div>
                         )
                     })
                 }
             </Contentgrid>
 
-            <Contentgrid classCss="bg-gray-100">
-
+            <Contentgrid classCss="bg-gray-100" id="meeting">
+                <div className='my-4 col-span-2 pl-2 flex flex-col items-center'>
+                    <h1 className='gradient-text text-4xl'>Who Will You Meet ? </h1>
+                    <img src={characters} />
+                </div>
                 <div className='col-span-2 py-5'>
                     <ul className="list-none space-y-4 text-gray-700">
                         {meetingData.map((element) => {
                             return (
-                                <li className={`flex items-center p-4 bg-gradient-to-r ${element?.color} rounded-lg shadow-md hover:shadow-lg`}>
+                                <li className={`flex items-center p-4 bg-gradient-to-r ${element?.color} rounded-lg shadow-md hover:shadow-lg mx-5`}>
                                     <div className="bg-white rounded-full p-2 mr-4">
                                         <svg className={`w-6 h-6 ${element.imgcolor}`} fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                                             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7"></path>
@@ -209,16 +230,13 @@ export const HomePage = () => {
                         }
                     </ul>
                 </div>
-                <div className='my-4 col-span-2  pl-2 flex flex-col items-center'>
-                    <h1 className='gradient-text text-4xl'>Who Will You Meet ? </h1>
-                    <img src={characters} />
-                </div>
+
 
             </Contentgrid>
 
-            <Contentgrid classCss="mt-10  mx-2">
+            <Contentgrid classCss="mt-10  mx-2 px-4" id="why_attend">
 
-                <div className='col-span-3'>
+                <div className='md:col-span-3'>
                     <h1 className='gradient-text text-4xl'>Why Attend?</h1>
                     <p className='py-2'>
                         The 4th Annual Future Banks Summit KSA 2023 will highlight the enabling role of digitalization in reshaping the future of banking. The pandemic has forced digital acceleration at such a massive scale that banks are not just looking to transform but are forced to reimagine their business. Delegates will experience a power-packed agenda consisting of presentations, panel discussions, and keynotes from globally and regionally renowned speakers, panelists, and moderators.                    </p>
@@ -226,7 +244,7 @@ export const HomePage = () => {
                         If you are ready to innovate and join the ranks of the brightest minds in the industry while resonating with the following compelling reasons to attend, then register today:
                     </p>
                     <p className='py-2 mx-auto mt-2 '>
-                        <ul className='space-x-4 flex '>
+                        <ul className='md:space-x-4 space-x-0 md:space-y-0 space-y-4 flex md:flex-row flex-col'>
                             <li className={`cursor-pointer rounded-lg overflow-hidden transition duration-300 transform hover:scale-105 bg-gradient-to-r from-purple-300 to-purple-400 p-6`}
                             ><div>Gain knowledge and insights from top industry leaders and experts from across the globe.</div>
                             </li><li className={`cursor-pointer rounded-lg overflow-hidden transition duration-300 transform hover:scale-105 bg-gradient-to-r from-red-300 to-red-400 p-6`}
@@ -239,23 +257,9 @@ export const HomePage = () => {
                 <div className='my-4 col-span-1'>
                     <img src={humansImg} />
                 </div>
-                {/* <div className="container mx-auto mt-12">
-                    <h1 className="text-4xl font-bold text-center mb-8">Key Features</h1>
-                    <ul className="list-none space-y-4">
-                        {pointsData.map((point, index) => (
-                            <li
-                                key={index}
-                                className={`group cursor-pointer rounded-lg overflow-hidden transition duration-300 transform hover:scale-105 bg-gradient-to-r ${point.color} p-6`}
-                            >
-                                <div className="mb-4">
-                                    <h2 className="text-2xl font-bold text-white group-hover:text-gray-200">{point.title}</h2>
-                                </div>
-                                <p className="text-gray-100 group-hover:text-gray-300">{point.description}</p>
-                            </li>
-                        ))}
-                    </ul>
-                </div> */}
             </Contentgrid >
+
+            <Footer />
         </>
     )
 }
