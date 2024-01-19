@@ -118,23 +118,6 @@ export const HomePage = () => {
             text: 'Heads of Governance & Compliance'
         }
     ]
-    const pointsData = [
-        {
-            title: 'Engaging Sessions',
-            description: 'Immerse yourself in thought-provoking sessions with industry experts.',
-            color: 'from-purple-500 to-purple-700',
-        },
-        {
-            title: 'Networking Opportunities',
-            description: 'Connect with professionals and expand your network during the summit.',
-            color: 'from-blue-500 to-blue-700',
-        },
-        {
-            title: 'Innovative Solutions',
-            description: 'Explore the latest innovations and solutions shaping the future.',
-            color: 'from-green-500 to-green-700',
-        }
-    ];
     return (
         <>
             <div className="bg-cover bg-center h-[600px] w-full" style={{ backgroundImage: `url(${imageUrl})` }}>
@@ -198,7 +181,7 @@ export const HomePage = () => {
                             <div className='container flex col-span-1 my-5  hover:drop-shadow-md cursor-pointer w-full h-full justify-center'>
                                 <div className={`relative ${element.mainColor} w-64 h-72 rounded-md px-10 py-20 flex text-center items-center`}>
                                     <div className='absolute -top-8 left-[34%] w-20 h-20 drop-shadow-lg '>
-                                        <img src={element.imgSrc} className={`rounded-full w-full h-full ${element.imgColor} z-2 object-cover`} />
+                                        <img src={element.imgSrc} className={`rounded-full w-full h-full ${element.imgColor} z-2 object-cover`} alt="" />
                                     </div>
                                     <p className='text-sm font-bold text-gray-500 drop-shadow-xl'>
                                         {element.text}
@@ -213,7 +196,7 @@ export const HomePage = () => {
             <Contentgrid classCss="bg-gray-100" id="meeting">
                 <div className='my-4 col-span-2 pl-2 flex flex-col items-center'>
                     <h1 className='gradient-text text-4xl'>Who Will You Meet ? </h1>
-                    <img src={characters} />
+                    <img src={characters} alt=""/>
                 </div>
                 <div className='col-span-2 py-5'>
                     <ul className="list-none space-y-4 text-gray-700">
@@ -257,7 +240,7 @@ export const HomePage = () => {
                     </p>
                 </div>
                 <div className='my-4 col-span-1'>
-                    <img src={humansImg} />
+                    <img src={humansImg} alt=""/>
                 </div>
             </Contentgrid >
 

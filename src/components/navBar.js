@@ -38,20 +38,6 @@ const NavBar = (props) => {
             </div>
         </nav>
 
-
-        // <nav className="bg-transparent absolute top-0 left-0 right-0 p-4">
-        //     <div className="container mx-auto flex justify-between items-center text-white">
-        //         <div className="flex items-center">
-        //             <img src={Logo} alt="Logo" className="h-10 w-25 mr-2" />
-        //         </div>
-        //         <div className="flex space-x-4">
-        //             <a href="#" className="hover:text-gray-300">Home</a>
-        //             <a href="#" className="hover:text-gray-300">About</a>
-        //             <a href="#" className="hover:text-gray-300">Services</a>
-        //             <a href="#" className="hover:text-gray-300">Contact</a>
-        //         </div>
-        //     </div>
-        // </nav>
     );
 };
 
