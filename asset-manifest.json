@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/VerveMgs-As2/static/css/main.884357df.css",
-    "main.js": "/VerveMgs-As2/static/js/main.4b40f2f5.js",
+    "main.css": "/VerveMgs-As2/static/css/main.5545cc96.css",
+    "main.js": "/VerveMgs-As2/static/js/main.b43f7230.js",
     "static/media/Humaaans - 3 Characters.png": "/VerveMgs-As2/static/media/Humaaans - 3 Characters.9789e57005d281feb447.png",
     "static/media/characters.png": "/VerveMgs-As2/static/media/characters.f29c0bed7e445c593b3f.png",
     "static/media/Logo.png": "/VerveMgs-As2/static/media/Logo.9edbece6a51c90185605.png",
     "index.html": "/VerveMgs-As2/index.html",
-    "main.884357df.css.map": "/VerveMgs-As2/static/css/main.884357df.css.map",
-    "main.4b40f2f5.js.map": "/VerveMgs-As2/static/js/main.4b40f2f5.js.map"
+    "main.5545cc96.css.map": "/VerveMgs-As2/static/css/main.5545cc96.css.map",
+    "main.b43f7230.js.map": "/VerveMgs-As2/static/js/main.b43f7230.js.map"
   },
   "entrypoints": [
-    "static/css/main.884357df.css",
-    "static/js/main.4b40f2f5.js"
+    "static/css/main.5545cc96.css",
+    "static/js/main.b43f7230.js"
   ]
 }
